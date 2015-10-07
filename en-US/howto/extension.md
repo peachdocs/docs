@@ -15,7 +15,7 @@ ENABLE_SEARCH = false
 
 ## Highlight JS
 
-Highlight JS is enabled and can not be disabled, but if you can customize the theme of it.
+Highlight JS is enabled and can not be disabled, but you can customize the theme of it.
 
 For example, you want to use `zenburn` theme instead of default one. 
 
