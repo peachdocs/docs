@@ -29,4 +29,6 @@ Here is an example of how to setup Peach webhook on GitHub, but elsewhere is alm
 2. Fill in **Payload URL** with hook URL path, for example, `http://peachdocs.org/hook?secret=mypeach`.
 3. Click `Add webhook`, and you're all set. :tada:
 
+![](/docs/images/github_webhook.png)
+
 Now every time you push or merge Pull Request on GitHub, your Peach instance will automatically update documentation to the latest version.

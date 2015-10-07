@@ -29,4 +29,6 @@ SECRET = mysecret
 2. 填写 **Payload URL** 值为触发钩子的 URL 路径，例如：`http://peachdocs.org/hook?secret=mypeach`
 3. 单击 `Add webhook` 搞定。 :tada:
 
+![](/docs/images/github_webhook.png)
+
 从此以后，凡是在 GitHub 推送或合并请求，您的文档都会自动更新到最新版本。
