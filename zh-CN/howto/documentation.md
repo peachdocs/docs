@@ -155,6 +155,20 @@ name: 高级用法
 ---
 ```
 
+## 链接跳转
+
+Peach 中渲染链接的方式和其它地方大体相同：
+
+- 链接到相同目录的其它页面：`[Webhook](webhook)`.
+- 链接到某个目录：`[Introduction](../intro)`.
+- 链接到其它目录下的页面：`[Getting Started](../intro/getting_started)`.
+
+## 链接图片
+
+默认情况下，所有的文档页面都会使用 `/docs` 作为 URL 前缀。并且您所有的图片都必须存放于仓库根目录下名为 `images` 的子目录。
+
+然后通过这种语法来链接图片：`![](/docs/images/github_webhook.png)`
+
 ## 文档配置
 
 所有的配置改动都必须发生在 `custom/app.ini` 文件。

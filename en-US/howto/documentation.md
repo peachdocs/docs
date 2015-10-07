@@ -155,6 +155,20 @@ name: Advanced
 ---
 ```
 
+## Links
+
+Rendering links in Peach is pretty much same as all the other places:
+
+- Link to page in the same level: `[Webhook](webhook)`.
+- Link to directory page: `[Introduction](../intro)`.
+- Link to page in another directory: `[Getting Started](../intro/getting_started)`.
+
+## Images
+
+By default, documentaion pages have a URL prefix `/docs`, and all your images must be put in a subdirectory of repository root directory named `images`.
+
+Then this is how you link a image: `![](/docs/images/github_webhook.png)`.
+
 ## Configuration
 
 All configuration changes must be made in file `custom/app.ini`.
