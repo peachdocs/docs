@@ -68,7 +68,7 @@ git clone https://github.com/peachdocs/peach.peach.git custom
 
 简单粗暴！请给自己的机智点 32 个赞。:clap:
 
-好了，快点在我们的项目目录下（`~/Downloads`）运行 Peach 吧：
+好了，快点在我们的项目目录下（`~/Downloads/my.peach`）运行 Peach 吧：
 
 ```sh
 # 请根据需要修改为任意可以执行 Peach 的命令

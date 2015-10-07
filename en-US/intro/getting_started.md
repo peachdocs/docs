@@ -68,7 +68,7 @@ git clone https://github.com/peachdocs/peach.peach.git custom
 
 Very well! You can't wait to try it out, can you?
 
-Why don't you now execute Peach in current directory (in this case, it is `~/Downloads`):
+Why don't you now execute Peach in current directory (in this case, it is `~/Downloads/my.peach`):
 
 ```sh
 # Change Peach path to wherever you can access it
