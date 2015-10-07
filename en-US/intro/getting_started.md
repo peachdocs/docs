@@ -4,3 +4,82 @@ name: Getting Started
 
 # Getting Started
 
+Let's create our first Peach project!
+
+By convention, every Peach project should be named in format `*.peach`, here we choose `my.peach`.
+
+In this tutorial, we're going to put our Peach project in download directory:
+
+```sh
+$ cd ~/Downloads
+$ mkdir my.peach
+$ cd my.peach
+```
+
+Then, we need to copy over default configuration, template files and static resources to our project directory.
+
+If you installed Peach from source code, you should use following commands or similar:
+
+```sh
+$ cp -r $GOPATH/src/github.com/peachdocs/peach/conf .
+$ cp -r $GOPATH/src/github.com/peachdocs/peach/public .
+$ cp -r $GOPATH/src/github.com/peachdocs/peach/templates .
+```
+
+Let's take a quick look of how our project is organized:
+
+```sh
+$ tree -L 2
+.
+├── conf
+│   ├── app.ini
+│   └── locale
+├── public
+│   ├── config.codekit
+│   ├── css
+│   ├── fonts
+│   ├── img
+│   ├── js
+│   └── less
+└── templates
+    ├── 404.html
+    ├── base.html
+    ├── disqus.html
+    ├── docs.html
+    ├── footer.html
+    ├── home.html
+    ├── navbar.html
+    └── search.html
+
+9 directories, 10 files
+```
+
+Great! We've got almost everything we need, except one thing: custom configuration.
+
+To quickly get started with, we are going to use the one Peach uses, it is [open sourced on GitHub](https://github.com/peachdocs/peach.peach). :heart_eyes:
+
+So... how do we use that? 
+
+Right, we clone it to local system, and name the directory to `custom` which Peach uses it to load all custom things.
+
+```sh
+git clone https://github.com/peachdocs/peach.peach.git custom
+```
+
+Very well! You can't wait to try it out, can you?
+
+Why don't you now execute Peach in current directory (in this case, it is `~/Downloads`):
+
+```sh
+# Change Peach path to wherever you can access it
+$ $GOAPTH/bin/peach
+```
+
+OK, Peach is now running and you should see log on your terminal:
+
+```
+[Peach] 15-10-06 19:58:44 [ INFO] Peach 0.5.2.1006
+[Peach] 15-10-06 19:58:44 [ INFO] Peach Server Listen on 0.0.0.0:5556
+```
+
+Based on the log, Peach is customized itself to listen on `0.0.0.0:5556` (default is `5555`), and if you open your browser and visit http://localhost:5556/, miracle happens!
