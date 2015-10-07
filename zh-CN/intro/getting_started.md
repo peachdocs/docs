@@ -85,3 +85,20 @@ $ $GOAPTH/bin/peach
 从日志说明来看，Peach 将监听的端口自定义为了 `5556`（默认为`5555`）。
 
 此时打开浏览器，访问 http://localhost:5556/ ，哈哈哈，我真是太佩服自己了。
+
+如果您对 Peach 的自定义配置感兴趣，让我通过 `custom/app.ini` 文件简单地解释一下：
+
+```ini
+# 修改监听端口
+HTTP_PORT = 5556
+
+[docs]
+# 设置文档类型为远程 Git 源
+TYPE = remote
+# 远程 Git 源的 URL
+TARGET = https://github.com/Unknwon/peach-docs.git
+```
+
+现在您应该明白为什么我们之前什么都没做就可以直接浏览文档了吧？
+
+好了，让我们继续学习下一个部分：[创建文档仓库](../howto/documentation)。

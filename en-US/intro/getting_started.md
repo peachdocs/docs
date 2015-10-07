@@ -83,3 +83,20 @@ OK, Peach is now running and you should see log on your terminal:
 ```
 
 Based on the log, Peach is customized itself to listen on `0.0.0.0:5556` (default is `5555`), and if you open your browser and visit http://localhost:5556/, miracle happens!
+
+If you curious about what is in Peach's custom configuration, let me briefly explain in the `custom/app.ini` file:
+
+```ini
+# Change listen port
+HTTP_PORT = 5556
+
+[docs]
+# Set documentation to a remote Git source adrress
+TYPE = remote
+# URL to remote Git source
+TARGET = https://github.com/Unknwon/peach-docs.git
+```
+
+This should explain why we didn't do anything with documentation but we can view it automatically.
+
+Well, let's moving forward: [Setup your documentation repository](../howto/documentation).
