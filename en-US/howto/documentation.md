@@ -157,4 +157,54 @@ name: Advanced
 
 ## Configuration
 
-TODO
+All configuration changes must be made in file `custom/app.ini`.
+
+### Locales
+
+By default, Peach supports English and Simplified Chinese, so if you're writing documentation for these two languages, you don't need to change settings in this part.
+
+But if you're just writing documentation in English, you would have to rewrite corresponding values:
+
+```ini
+[i18n]
+LANGS = en-US
+NAMES = English
+```
+
+Or you're supporting more than two languages:
+
+```ini
+[i18n]
+LANGS = en-US,zh-CN,fr-FR
+NAMES = English,简体中文,Français
+```
+
+Note that the first language, in both examples above, `en-US` will also be known as **default language**, any page that is not available in other languages, will present content in this language.
+
+### Git Repository
+
+In production, you would use remote Git source as your documentation repository:
+
+```ini
+RUN_MODE = prod
+
+[docs]
+TYPE = remote
+TARGET = https://github.com/Unknwon/peach-docs.git
+```
+
+So Peach knows where to fetch and update your documentation, and cache all documents.
+
+## Developing Locally
+
+To make your life easier while you're developing your documentation locally, Peach also supports specify a local target path of your documentation repository:
+
+```ini
+RUN_MODE = dev
+
+[docs]
+TYPE = local
+TARGET = ~unknwon/mydocs
+```
+
+In `dev` mode, Peach reloads your documents every time you refresh a page, so you can preview results instantly.
