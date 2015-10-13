@@ -19,7 +19,7 @@ $ echo $GOPATH
 ~unknwon/go
 ```
 
-The minimum requirement version of Go is **1.2**.
+The minimum requirement version of Go is **1.3**.
 
 You can then install Peach by executing following command:
 
