@@ -9,5 +9,4 @@ If you find some features are missing in the latest release, and you don't see t
 List is ordered by the priority of implementation and may be changed:
 
 - Commands to initialize and update static resources
-- Serve static HTML
 - Versionable (branch and tag)
