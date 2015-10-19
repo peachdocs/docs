@@ -24,6 +24,28 @@ Highlight JS 默认启用且不可关闭，但可以自定义它的渲染主题�
 HIGHLIGHTJS_CUSTOM_CSS = /css/zenburn.css
 ```
 
+## 编辑页面
+
+您可以在文档页面添加一个编辑页面的链接以方便用户一同协助改进文档。
+
+您需要对配置文件做出相应的修改才能使用该扩展：
+
+```ini
+[extension]
+ENABLE_EDIT_PAGE = true
+EDIT_PAGE_LINK_FORMAT = https://github.com/peachdocs/docs/blob/master/{lang}/{blob}
+```
+
+请不要忘记将链接修改为您的仓库链接！
+
+:white_flower: 如果您正在使用低于 **0.7.0** 版本的 Peach，并且使用了自定义模板，则需要在 `docs.html` 模板文件的 `{{Content|safe}}` 这一行之前加入以下内容：
+
+```django
+{% if Extension.EnableEditPage %}
+	<a class="ui blue button" id="edit_page" href="{{EditPageLink}}">{{Tr(Lang, "docs.edit_page")}}</a>
+{% endif %}
+```
+
 ## Disqus
 
 您需要在 [Disqus](https://disqus.com/) 上添加一个站点后才能使用 Disqus 扩展，然后做出相应的配置修改：

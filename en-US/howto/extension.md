@@ -26,6 +26,28 @@ You first copy `zenburn.css` and put it into `custom/public/css` directory, then
 HIGHLIGHTJS_CUSTOM_CSS = /css/zenburn.css
 ```
 
+## Edit Page
+
+You can add a button which links to somewhere that people and edit and help improve the documentation.
+
+To use this extension, you should make corresponding changes of settings as follows:
+
+```ini
+[extension]
+ENABLE_EDIT_PAGE = true
+EDIT_PAGE_LINK_FORMAT = https://github.com/peachdocs/docs/blob/master/{lang}/{blob}
+```
+
+Don't forget to change to your repository link!
+
+:white_flower: If you're using Peach with version lower than **0.7.0**, and are using custom templates. Please add following content right before `{{Content|safe}}` in template file `docs.html`:
+
+```django
+{% if Extension.EnableEditPage %}
+	<a class="ui blue button" id="edit_page" href="{{EditPageLink}}">{{Tr(Lang, "docs.edit_page")}}</a>
+{% endif %}
+```
+
 ## Disqus
 
 To use Disqus extension, you should add a site on [Disqus](https://disqus.com/) first, then make corresponding changes of settings:
