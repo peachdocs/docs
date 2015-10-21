@@ -65,3 +65,4 @@ custom/locale
 如果您对其它项目如何自定义模板感兴趣，可以参考以下案例：
 
 - [gogsweb.peach](https://github.com/gogits/gogsweb.peach)
+- [blade.peach](https://github.com/bladejava/blade.peach)

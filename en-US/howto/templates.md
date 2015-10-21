@@ -63,3 +63,4 @@ custom/locale
 In case you are interested in how other projects customize their templates and locale files:
 
 - [gogsweb.peach](https://github.com/gogits/gogsweb.peach)
+- [blade.peach](https://github.com/bladejava/blade.peach)
