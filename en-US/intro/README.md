@@ -14,7 +14,7 @@ The following table illustrates the main feature differences between Peach and o
 
 |Name|Self-hosted|Multi-language|Real-time Sync|Static HTML|Versionable|
 |:--:|:---------:|:------------:|:------------:|:---------:|:---------:|
-|Peach|✅|✅|✅|✅(cachable)|[Roadmap](intro/roadmap)|
+|Peach|✅|✅|✅|✅(cachable)|[Roadmap](/docs/intro/roadmap)|
 |Mkdocs|✅|❌|❌|✅|❌|
 |Read The Docs|❌|✅|✅|✅|✅|
 
