@@ -58,6 +58,16 @@ ENABLE_DISQUS = true
 DISQUS_SHORT_NAME = mypeach
 ```
 
+## DuoShuo
+
+To use DuoShuo extension, you should add a site on [DuoShuo](http://duoshuo.com/) first, then make corresponding changes of settings:
+
+```ini
+[extension]
+ENABLE_DUOSHUO = true
+DUOSHUO_SHORT_NAME = mypeach
+```
+
 ## Google Analytics
 
 To use Google Analytics extension, you should add a profile on [Google Analytics](http://www.google.com/analytics/) first, then make corresponding changes of settings:

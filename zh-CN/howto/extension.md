@@ -56,6 +56,16 @@ ENABLE_DISQUS = true
 DISQUS_SHORT_NAME = mypeach
 ```
 
+## 多说
+
+您需要在 [DuoShuo](http://duoshuo.com/) 上添加一个站点后才能使用多说扩展，然后做出相应的配置修改：
+
+```ini
+[extension]
+ENABLE_DUOSHUO = true
+DUOSHUO_SHORT_NAME = mypeach
+```
+
 ## Google Analytics
 
 您需要在 [Google Analytics](http://www.google.com/analytics/) 上创建一份档案后才能使用 Google Analytics 扩展，然后做出相应的配置修改：
