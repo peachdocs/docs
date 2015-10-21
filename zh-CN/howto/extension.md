@@ -58,6 +58,8 @@ DISQUS_SHORT_NAME = mypeach
 
 ## 多说
 
+:white_flower: 要求 Peach 版本不得低于 **0.7.1**
+
 您需要在 [DuoShuo](http://duoshuo.com/) 上添加一个站点后才能使用多说扩展，然后做出相应的配置修改：
 
 ```ini

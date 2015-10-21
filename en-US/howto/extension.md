@@ -60,6 +60,8 @@ DISQUS_SHORT_NAME = mypeach
 
 ## DuoShuo
 
+:white_flower: Requires Peach version **0.7.1**
+
 To use DuoShuo extension, you should add a site on [DuoShuo](http://duoshuo.com/) first, then make corresponding changes of settings:
 
 ```ini
