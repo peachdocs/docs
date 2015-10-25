@@ -27,10 +27,10 @@ $ echo $GOPATH
 go get github.com/peachdocs/peach
 ```
 
-也可以通过使用 `-v` 标志来更新 Peach：
+也可以通过使用 `-u` 标志来更新 Peach：
 
 ```sh
-go get -v github.com/peachdocs/peach
+go get -u github.com/peachdocs/peach
 ```
 
 然后使用以下命令来检查安装在您系统的 Peach 版本（假设路径 `$GOPATH/bin` 已经被添加到环境变量 `$PATH`）：

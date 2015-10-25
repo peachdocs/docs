@@ -27,10 +27,10 @@ You can then install Peach by executing following command:
 go get github.com/peachdocs/peach
 ```
 
-Add `-v` flag to update Peach:
+Add `-u` flag to update Peach:
 
 ```sh
-go get -v github.com/peachdocs/peach
+go get -u github.com/peachdocs/peach
 ```
 
 You can then use following command to check which version of Peach is installed on your system (Suppose `$GOPATH/bin` has been added to your `$PATH`):
