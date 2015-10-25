@@ -12,46 +12,45 @@ name: 开始使用
 
 ```sh
 $ cd ~/Downloads
-$ mkdir my.peach
-$ cd my.peach
 ```
 
-接下来，我们需要把默认的配置、模板文件和静态资源拷贝到项目中来。
+接下来，我们需要做一些基本设定（假设路径 `$GOPATH/bin` 已经被添加到环境变量 `$PATH`）。
 
 如果您是通过源码安装 Peach 的，应该执行与以下类似的命令：
 
 ```sh
-$ cp -r $GOPATH/src/github.com/peachdocs/peach/conf .
-$ cp -r $GOPATH/src/github.com/peachdocs/peach/public .
-$ cp -r $GOPATH/src/github.com/peachdocs/peach/templates .
+$ peach new -target=my.peach
+➜  Creating 'my.peach'...
+➜  Creating 'templates'...
+➜  Creating 'public'...
+Do you want to use custom templates?[Y/n] n
+✓  Done!
 ```
 
 好了，来看看目前我们的项目是个什么情况吧：
 
 ```sh
+$ cd my.peach
 $ tree -L 2
 .
 ├── conf
 │   ├── app.ini
 │   └── locale
 ├── public
-│   ├── config.codekit
 │   ├── css
 │   ├── fonts
 │   ├── img
-│   ├── js
-│   └── less
+│   └── js
 └── templates
     ├── 404.html
     ├── base.html
     ├── disqus.html
     ├── docs.html
+    ├── duoshuo.html
     ├── footer.html
     ├── home.html
     ├── navbar.html
     └── search.html
-
-9 directories, 10 files
 ```
 
 不错不错，差不多都搞定了，不过还差一样，是什么呢？当然是自定义配置啦。
@@ -71,14 +70,13 @@ git clone https://github.com/peachdocs/peach.peach.git custom
 好了，快点在我们的项目目录下（`~/Downloads/my.peach`）运行 Peach 吧：
 
 ```sh
-# 请根据需要修改为任意可以执行 Peach 的命令
-$ $GOAPTH/bin/peach
+$ peach web
 ```
 
 现在，我们就可以从控制台看到一些日志啦：
 
 ```
-[Peach] 15-10-06 19:58:44 [ INFO] Peach 0.5.2.1006
+[Peach] 15-10-06 19:58:44 [ INFO] Peach 0.8.0.1025
 [Peach] 15-10-06 19:58:44 [ INFO] Peach Server Listen on 0.0.0.0:5556
 ```
 

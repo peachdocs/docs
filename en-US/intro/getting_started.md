@@ -12,53 +12,50 @@ In this tutorial, we're going to put our Peach project in download directory:
 
 ```sh
 $ cd ~/Downloads
-$ mkdir my.peach
-$ cd my.peach
 ```
 
-Then, we need to copy over default configuration, template files and static resources to our project directory.
-
-If you installed Peach from source code, you should use following commands or similar:
+Then, we need to setup default things (Suppose `$GOPATH/bin` has been added to your `$PATH`):
 
 ```sh
-$ cp -r $GOPATH/src/github.com/peachdocs/peach/conf .
-$ cp -r $GOPATH/src/github.com/peachdocs/peach/public .
-$ cp -r $GOPATH/src/github.com/peachdocs/peach/templates .
+$ peach new -target=my.peach
+➜  Creating 'my.peach'...
+➜  Creating 'templates'...
+➜  Creating 'public'...
+Do you want to use custom templates?[Y/n] n
+✓  Done!
 ```
 
 Let's take a quick look of how our project is organized:
 
 ```sh
+$ cd my.peach
 $ tree -L 2
 .
 ├── conf
 │   ├── app.ini
 │   └── locale
 ├── public
-│   ├── config.codekit
 │   ├── css
 │   ├── fonts
 │   ├── img
-│   ├── js
-│   └── less
+│   └── js
 └── templates
     ├── 404.html
     ├── base.html
     ├── disqus.html
     ├── docs.html
+    ├── duoshuo.html
     ├── footer.html
     ├── home.html
     ├── navbar.html
     └── search.html
-
-9 directories, 10 files
 ```
 
 Great! We've got almost everything we need, except one thing: custom configuration.
 
 To quickly get started with, we are going to use the one Peach uses, it is [open sourced on GitHub](https://github.com/peachdocs/peach.peach). :heart_eyes:
 
-So... how do we use that? 
+So... how do we use that?
 
 Right, we clone it to local system, and name the directory to `custom` which Peach uses it to load all custom things.
 
@@ -68,17 +65,16 @@ git clone https://github.com/peachdocs/peach.peach.git custom
 
 Very well! You can't wait to try it out, can you?
 
-Why don't you now execute Peach in current directory (in this case, it is `~/Downloads/my.peach`):
+Why don't you now start a Peach server in current directory (in this case, it is `~/Downloads/my.peach`):
 
 ```sh
-# Change Peach path to wherever you can access it
-$ $GOAPTH/bin/peach
+$ peach web
 ```
 
 OK, Peach is now running and you should see log on your terminal:
 
 ```
-[Peach] 15-10-06 19:58:44 [ INFO] Peach 0.5.2.1006
+[Peach] 15-10-06 19:58:44 [ INFO] Peach 0.8.0.1025
 [Peach] 15-10-06 19:58:44 [ INFO] Peach Server Listen on 0.0.0.0:5556
 ```
 
