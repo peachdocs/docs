@@ -6,6 +6,10 @@ name: 下载安装
 
 由于目前我们没有提供编译好的二进制进行分发，因此您必须知道如何搭建 [Go](https://golang.org/) 语言的开发环境。
 
+## 从二进制安装
+
+您可以直接从 [GitHub](https://github.com/peachdocs/peach/releases) 上下载最新版本的二进制文件。
+
 ## 从源码安装
 
 从源码安装要求您已经搭建好 [Go](https://golang.org/) 语言的开发环境并正确设置 `$GOPATH` 环境变量。
@@ -37,5 +41,5 @@ go get -u github.com/peachdocs/peach
 
 ```sh
 $ peach -v
-Peach version 0.8.0.1025
+Peach version 0.9.2.1214
 ```

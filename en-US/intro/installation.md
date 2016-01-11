@@ -6,6 +6,10 @@ name: Installation
 
 Since we haven't had binary distribution yet, you have to know how to install and setup [Go](https://golang.org/) environment to get started with.
 
+## From Binary
+
+You can download binaries of latest release on [GitHub](https://github.com/peachdocs/peach/releases).
+
 ## From Source Code
 
 Install from source code requires you have setup [Go](https://golang.org/) environment and set `$GOPATH` variable correctly.
@@ -37,5 +41,5 @@ You can then use following command to check which version of Peach is installed 
 
 ```sh
 $ peach -v
-Peach version 0.8.0.1025
+Peach version 0.9.2.1214
 ```
