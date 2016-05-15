@@ -72,7 +72,7 @@ Here is the `TOC.ini` took from [Peach Docs](http://peachdocs.org):
 
 :speech_balloon: A quick answer to the question you may have, yes, Peach only supports one level for directory.
 
-In the default section, you define what are the directories and the order of them:
+In the default section, you define what the directories are and their order:
 
 ```ini
 -: intro
@@ -81,7 +81,7 @@ In the default section, you define what are the directories and the order of the
 -: faqs
 ```
 
-These name are the same as the directores' name.
+These name are the same as the directory's name.
 
 Then you create a section for each of these name, and the order of these sections does not matter:
 
