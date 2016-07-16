@@ -4,8 +4,6 @@ name: Installation
 
 # Installation
 
-Since we haven't had binary distribution yet, you have to know how to install and setup [Go](https://golang.org/) environment to get started with.
-
 ## From Binary
 
 You can download binaries of latest release on [GitHub](https://github.com/peachdocs/peach/releases).
