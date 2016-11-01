@@ -8,9 +8,9 @@ Peach is a web server for multi-language, real-time synchronization and searchab
 
 ## Motivation
 
-There are some awesome web documentation tools, but all of they cannot satisfy my own needs for a fairly long time, and I have many projects' documentation need to be hosted on the web, so **a common and customizable solution** is what I'm looking for. This is the initial reason for Peach to be created.
+There are some awesome web documentation tools, but for a long time, none of them satisfied my need to post multi-project documentation on the web, so I have been searching for **a common and customizable solution**. This is initally why Peach was created.
 
-The following table illustrates the main feature differences between Peach and other existing tools (things may be different from what I understand):
+The following table illustrates the main feature differences between Peach and other existing tools (concepts may be different from what I understand):
 
 |Name|Self-hosted|Multi-language|Real-time Sync|Static HTML|Versionable|
 |:--:|:---------:|:------------:|:------------:|:---------:|:---------:|
