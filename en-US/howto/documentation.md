@@ -31,15 +31,15 @@ $ tree
 │   ├── ...
 ```
 
-Let me explain them each at a time.
+Let me explain them one at a time.
 
 ## TOC.ini
 
-In the repository root directory, you must have a file named `TOC.ini`, which stands for **Table Of Content**.
+In the repository root directory, you must have a file named `TOC.ini`, which stands for **Table Of Contents**.
 
-In this file, you will use [INI](https://en.wikipedia.org/wiki/INI_file) syntax to define what are the directories and files, and in which order to organize them.
+In this file, you will use [INI](https://en.wikipedia.org/wiki/INI_file) syntax to define the directories and files, and their organization.
 
-Here is the `TOC.ini` took from [Peach Docs](http://peachdocs.org):
+Here is the `TOC.ini` from [Peach Docs](http://peachdocs.org):
 
 ```ini
 -: intro
@@ -70,9 +70,9 @@ Here is the `TOC.ini` took from [Peach Docs](http://peachdocs.org):
 -: README
 ```
 
-:speech_balloon: A quick answer to the question you may have, yes, Peach only supports one level for directory.
+:speech_balloon: Note that Peach only supports single-level directories.
 
-In the default section, you define what the directories are and their order:
+In the default section, define the directories and their order:
 
 ```ini
 -: intro
@@ -81,9 +81,9 @@ In the default section, you define what the directories are and their order:
 -: faqs
 ```
 
-These name are the same as the directory's name.
+These names are the same as the directory's name.
 
-Then you create a section for each of these name, and the order of these sections does not matter:
+Then create a section for each name. The section order doesn't matter:
 
 ```ini
 [intro]
@@ -96,7 +96,7 @@ Then you create a section for each of these name, and the order of these section
 ...
 ```
 
-In each of these sections, you define what are the files and the order of them:
+In each section, define the files and their order:
 
 ```ini
 [intro]
@@ -106,14 +106,14 @@ In each of these sections, you define what are the files and the order of them:
 -: roadmap
 ```
 
-Files are using Markdown syntax so their name must end with `.md` extension but since we know that, you do not need to put extension in the `TOC.ini` file at all.
+Because files use Markdown syntax, their names must end with an `.md` extension. However, since we know that, no extension needs to be added in the `TOC.ini` file at all.
 
 :exclamation: :exclamation: :exclamation:
 
-- Every section must at least have one key.
-- Every first key in a section is corresponding to the information of the direcetory.
-- This file itself will not be shown as a document page, but for the direcetory. For example, [Introduction](../intro).
-- The name of first key can be anything, but the convention is using `README`, and `README.md` as file name.
+- Every section must have at least one key.
+- The first key in every section corresponds to the directory's information.
+- This file itself will not be shown as a document page, but for the directory. For example, [Introduction](../intro).
+- The name of the first key can be anything, but conventionnally, `README` and `README.md` are used as file names.
 
 ## Localization
 
@@ -130,11 +130,11 @@ $ tree
 │   ├── ...
 ```
 
-And of course, both of these two directories have exactly the same structure and files' name.
+And of course, both of these directories have exactly the same structure and file name.
 
 ## Document
 
-Every file must have definition information of itself at the very beginning, real content follows afterwards:
+Every file must define itself in the very beginning; real content follows afterwards:
 
 ```
 ---
@@ -147,7 +147,7 @@ Peach is a web server for multi-language, real-time synchronization and searchab
 ...
 ```
 
-In case you only need to define information of a directory, but there is no content for it, you can skip the content:
+If you only need to define information in a directory but it has no content, skip the content:
 
 ```
 ---
@@ -157,7 +157,7 @@ name: Advanced
 
 ## Links
 
-Rendering links in Peach is pretty much same as all the other places:
+Rendering links in Peach basically works the same way as anywhere else:
 
 - Link to page in the same level: `[Webhook](webhook)`.
 - Link to directory page: `[Introduction](../intro)`.
@@ -167,7 +167,7 @@ Rendering links in Peach is pretty much same as all the other places:
 
 By default, documentaion pages have a URL prefix `/docs`, and all your images must be put in a subdirectory of repository root directory named `images`.
 
-Then this is how you link a image: `![](/docs/images/github_webhook.png)`.
+This is how to link a image: `![](/docs/images/github_webhook.png)`.
 
 ## Configuration
 
@@ -177,7 +177,7 @@ All configuration changes must be made in file `custom/app.ini`.
 
 By default, Peach supports English and Simplified Chinese, so if you're writing documentation for these two languages, you don't need to change settings in this part.
 
-But if you're just writing documentation in English, you would have to rewrite corresponding values:
+If you're just writing documentation in English, you would need to rewrite corresponding values:
 
 ```ini
 [i18n]
@@ -185,7 +185,7 @@ LANGS = en-US
 NAMES = English
 ```
 
-Or you're supporting more than two languages:
+If you're supporting more than two languages:
 
 ```ini
 [i18n]
@@ -193,11 +193,11 @@ LANGS = en-US,zh-CN,fr-FR
 NAMES = English,简体中文,Français
 ```
 
-Note that the first language, in both examples above, `en-US` will also be known as **default language**, any page that is not available in other languages, will present content in this language.
+Note that the first language, `en-US` in both of the examples above, will also be known as **default language**. Any page that is not available in other languages will present content in this language.
 
 ### Git Repository
 
-In production, you would use remote Git source as your documentation repository:
+In production, use remote Git source as your documentation repository:
 
 ```ini
 RUN_MODE = prod
@@ -207,11 +207,11 @@ TYPE = remote
 TARGET = https://github.com/Unknwon/peach-docs.git
 ```
 
-So Peach knows where to fetch and update your documentation, and cache all documents.
+This means Peach knows where to fetch and update your documentation, and cache all documents.
 
 ## Developing Locally
 
-To make your life easier while you're developing your documentation locally, Peach also supports specify a local target path of your documentation repository:
+To make your life easier while you're developing your documentation locally, Peach also supports specification of a local target path of your documentation repository:
 
 ```ini
 RUN_MODE = dev
