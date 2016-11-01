@@ -25,7 +25,7 @@ No, your custom directory does not have to be a Git repository, it's just a best
 
 ### How do I setup single language documentation?
 
-By default, Peach requires you have two languages version of documentation (`en-US` and `zh-CN`), otherwise it will complain an error of documentation missing. To use single language documentation, you need to make similar changes in your `custom/app.ini` as follows:
+By default, Peach requires you have two language versions of documentation (`en-US` and `zh-CN`); otherwise it will give an error about missing documentation. To use single language documentation, you need to make similar changes in your `custom/app.ini` as follows:
 
 ```
 [i18n]
