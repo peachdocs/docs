@@ -39,4 +39,4 @@ Peach is currently still in development, but can be used in production with some
 - [Peach Docs](http://peachdocs.org/): [peach.peach](https://github.com/peachdocs/peach.peach)
 - [Gogs Docs](http://gogs.io/): [gogsweb.peach](https://github.com/gogits/gogsweb.peach)
 - [Macaron Docs](http://go-macaron.com/): [macaron.peach](https://github.com/macaron-contrib/macaron.peach)
-- [Blade Docs](http://bladejava.com/): [blade.peach](https://github.com/bladejava/blade.peach)
+- [INI Docs](https://ini.unknwon.io/): [ini.peach](https://github.com/go-ini/ini.peach)

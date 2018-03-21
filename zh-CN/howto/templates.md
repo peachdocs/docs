@@ -38,6 +38,8 @@ Peach 默认使用 [Semantic UI](http://semantic-ui.com/) 作为它的 UI 框架
 
 因为 Peach 提供了对模板的完全自定义能力，您可以根据喜好将 UI 框架修改为 [Bootstrap](http://getbootstrap.com/)。当然，这就要求您首先 [导入所有相关的静态资源](static_resources) 到 `custom` 目录中。
 
+可以参考 [go-ini/ini 的案例](https://ini.unknwon.io/)，该网站使用了 [Material Design for Bootstrap](https://mdbootstrap.com/) 作为 UI 框架。
+
 ## 模板本地化
 
 Peach 使用 [Macaron](http://go-macaron.com/) 框架的 [i18n](http://go-macaron.com/docs/middlewares/i18n) 中间件来实现模板的本地化需求。
@@ -65,4 +67,4 @@ custom/locale
 如果您对其它项目如何自定义模板感兴趣，可以参考以下案例：
 
 - [gogsweb.peach](https://github.com/gogits/gogsweb.peach)
-- [blade.peach](https://github.com/bladejava/blade.peach)
+- [ini.peach](https://github.com/go-ini/ini.peach)

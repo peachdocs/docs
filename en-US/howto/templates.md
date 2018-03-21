@@ -38,6 +38,8 @@ If you're familiar with it, awesome! But it is **not a requirement**.
 
 You can change it and use [Bootstrap](http://getbootstrap.com/) as your UI framework because you have full control of how templates are defined. Of course, you need first [import all the static resources](static_resources) you need to the `custom` directory.
 
+See [example of go-ini/ini package](https://ini.unknwon.io/) which uses [Material Design for Bootstrap](https://mdbootstrap.com/) as its UI Framework.
+
 ## Localization
 
 Peach uses [Macaron](http://go-macaron.com/)'s [i18n](http://go-macaron.com/docs/middlewares/i18n) middleware for localization, here is an example how to translate a string in the template:
@@ -63,4 +65,4 @@ custom/locale
 In case you are interested in how other projects customize their templates and locale files:
 
 - [gogsweb.peach](https://github.com/gogits/gogsweb.peach)
-- [blade.peach](https://github.com/bladejava/blade.peach)
+- [ini.peach](https://github.com/go-ini/ini.peach)

@@ -41,4 +41,4 @@ Peach 目前仍处于开发阶段，但已可被用于生产环境。
 - [Peach 文档](http://peachdocs.org/)：[peach.peach](https://github.com/peachdocs/peach.peach)
 - [Gogs 文档](http://gogs.io/)：[gogsweb.peach](https://github.com/gogits/gogsweb.peach)
 - [Macaron 文档](http://go-macaron.com/)：[macaron.peach](https://github.com/macaron-contrib/macaron.peach)
-- [Blade 文档](http://bladejava.com/)：[blade.peach](https://github.com/bladejava/blade.peach)
+- [INI 文档](https://ini.unknwon.io/): [ini.peach](https://github.com/go-ini/ini.peach)
