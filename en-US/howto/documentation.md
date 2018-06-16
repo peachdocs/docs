@@ -208,7 +208,7 @@ TARGET = https://github.com/Unknwon/peach-docs.git
 TARGET_DIR = # Add subdirectory here if docs are not located in the root directory of your repository
 ```
 
-:white_flower: `TARGET_DIR` options requires Peach version **0.9.6**
+:white_flower: `TARGET_DIR` option requires Peach version **0.9.6**
 
 This means Peach knows where to fetch and update your documentation, and cache all documents.
 
