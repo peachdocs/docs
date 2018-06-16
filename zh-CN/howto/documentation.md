@@ -205,7 +205,10 @@ RUN_MODE = prod
 [docs]
 TYPE = remote
 TARGET = https://github.com/Unknwon/peach-docs.git
+TARGET_DIR = # 如果文档不是在仓库的根目录，可以在此处添加子目录名称
 ```
+
+:white_flower: `TARGET_DIR` 选项要求 Peach 版本不得低于 **0.9.6**
 
 如此一来，Peach 就知道去哪里拉取和更新文档，并对文档进行缓存。
 
