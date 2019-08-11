@@ -58,7 +58,7 @@ You can see that the order of items are defined in the section `[navbar]`, and i
 2. **LOCALE**: the value to be translated based on your locale file, and for certain name like "GitHub", you don't define a translation result, so it will not be translated.
 3. **LINK**: link of item, can be internal link like `/docs` or external link like `https://github.com/peachdocs/peach`.
 4. **BLANK**: `true` for open link in a new windows, default is `false`.
-5. **Enabled**：`false` for not rendering the element, default is `true` ( :white_flower: requires Peach version **0.9.8**)
+5. **Enabled**: `false` for not rendering the element, default is `true` ( :white_flower: requires Peach version **0.9.8**)
 
 :bell: You don't need to write or change anything, if your settings are exactly the same as default! This way, you can have most compatible way to work with Peach with possible future updates.
 
