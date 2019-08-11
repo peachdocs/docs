@@ -58,7 +58,7 @@ BLANK = true
 2. **LOCALE**：等待被翻译的本地化字符串，但当遇到如 “GitHub” 这样的特有名词，您不需要指定翻译结果，则该字符串就不会被翻译
 3. **LINK**：链接的具体地址，可以是内部链接 `/docs` 或外部链接 `https://github.com/peachdocs/peach`
 4. **BLANK**：值为 `true` 表示使用新窗口打开链接，默认为 `false`
-5. **Enabled**：值为 `false` 表示不渲染该元素，默认为 `true`（:white_flower: 该选项要求 Peach 版本不得低于 **0.9.8**）
+5. **Enabled**：值为 `false` 表示不渲染该元素，默认为 `true`（ :white_flower: 该选项要求 Peach 版本不得低于 **0.9.8**）
 
 :bell: 如果您的实际配置和默认的一样，则不需要书写或修改任何内容！这样一来，才能够最大程度保证 Peach 更新后与现有配置的兼容性。
 
